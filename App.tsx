@@ -9,17 +9,17 @@ import LoadingScreen from './components/LoadingScreen';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isDark, setIsDark] = useState(true);
+  
+  // Initialize theme directly from localStorage to prevent layout flash
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      return savedTheme ? savedTheme === 'dark' : true;
+    }
+    return true;
+  });
 
   useEffect(() => {
-    // Initialize theme from localStorage or default to dark
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setIsDark(savedTheme === 'dark');
-    } else {
-      setIsDark(true);
-    }
-
     // Simulate initial asset loading time
     const timer = setTimeout(() => {
       setIsLoading(false);

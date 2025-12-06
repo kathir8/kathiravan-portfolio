@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 'recharts';
 import { Cpu } from 'lucide-react';
 import { SKILLS, TOTAL_EXPERIENCE } from '../constants';
@@ -9,6 +9,20 @@ interface SkillsProps {
 }
 
 const Skills: React.FC<SkillsProps> = ({ isDark }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Initial check
+    checkMobile();
+
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Sort skills by proficiency for better visual
   const data = [...SKILLS].sort((a, b) => b.proficiency - a.proficiency);
 
@@ -46,16 +60,26 @@ const Skills: React.FC<SkillsProps> = ({ isDark }) => {
               <BarChart
                 data={data}
                 layout="vertical"
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                margin={{ 
+                  top: 5, 
+                  right: isMobile ? 10 : 30, 
+                  left: isMobile ? -10 : 20, 
+                  bottom: 5 
+                }}
               >
                 <XAxis type="number" domain={[0, 100]} hide />
                 <YAxis 
                   dataKey="name" 
                   type="category" 
-                  width={200} 
-                  tick={{ fill: isDark ? '#e2e8f0' : '#334155', fontSize: 13, fontWeight: 500 }} 
+                  width={isMobile ? 130 : 200} 
+                  tick={{ 
+                    fill: isDark ? '#e2e8f0' : '#334155', 
+                    fontSize: isMobile ? 11 : 13, 
+                    fontWeight: 500 
+                  }} 
                   axisLine={false}
                   tickLine={false}
+                  interval={0}
                 />
                 <Tooltip 
                   cursor={{ fill: isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)' }}

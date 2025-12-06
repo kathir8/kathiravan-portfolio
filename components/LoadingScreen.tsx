@@ -6,7 +6,7 @@ const ShimmerBlock: React.FC<{ className?: string }> = ({ className = "" }) => (
 
 const LoadingScreen: React.FC = () => {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-200">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-200 overflow-hidden">
       {/* Header Skeleton */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 h-20">
         <div className="container mx-auto px-6 h-full flex items-center justify-between">
