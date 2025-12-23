@@ -1,6 +1,6 @@
 ## Live Demo
 The portfolio is deployed on Vercel and available here:  
-👉 **https://kathiravan-dev.vercel.app/**
+👉 **https://kathir-dev.vercel.app/**
 
 
 ## Run Locally
