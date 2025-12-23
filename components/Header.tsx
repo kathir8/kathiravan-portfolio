@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
           </button>
 
           <a
-            href="/CV/Kathiravan_Resume.pdf"
+            href="/CV/Kathir_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 text-sm font-semibold bg-primary text-white rounded-full hover:bg-indigo-600 transition-colors shadow-lg shadow-indigo-500/20"
