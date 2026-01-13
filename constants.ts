@@ -40,8 +40,8 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     id: '1',
     company: 'Dedalus',
-    role: 'Product Developer',
-    period: '2023 – Present',
+    role: 'Software Engineering Senior Associate',
+    period: 'JUN 2023 - Present',
     description: [
       'Contributed to the migration of a large-scale LIMS application from Angular 12 to Angular 20.',
       'Built an Audit Mechanism using Elasticsearch to track user activity and ensure full compliance.',
@@ -53,9 +53,9 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: '2',
     company: 'Boodskap Labs',
     role: 'Software Engineer',
-    period: '2021 – 2023',
+    period: 'AUG 2021 - MAY 2023',
     description: [
-      'Developed multiple enterprise applications using Angular (v12–v14) with reusable components and scalable architecture.',
+      'Developed multiple enterprise applications using Angular (v12-v14) with reusable components and scalable architecture.',
       'Implemented state management with NgRx and robust API handling with RxJS for reliability and maintainability.',
       'Built rich UI experiences using Monaco Editor, ECharts, AG-Grid, and Google Maps integrations.',
       'Collaborated with clients on requirements, demos, and enhancements, delivering consistent product improvements.',
@@ -65,7 +65,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: '3',
     company: 'Finix Info Solution',
     role: 'Frontend Developer',
-    period: '2020 – 2021',
+    period: 'JUL 2020 - AUG 2021',
     description: [
       'Designed and developed complete responsive UIs using jQuery, Bootstrap, and HTML5 for multiple client projects.',
       'Owned full lifecycle delivery for web projects, including UI design, development, and client communication.',
