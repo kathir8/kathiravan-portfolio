@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { calculateExperience } from '../utils/experienceCalculator';
+import { calculateExperience } from '../utils/experienceCalculator.js';
 
 export default function handler(req, res) {
     try {
