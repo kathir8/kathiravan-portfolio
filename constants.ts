@@ -1,40 +1,9 @@
 import { ExperienceItem, Project, Skill } from './types';
-
-// Start date: July 15, 2020
-const START_DATE = new Date('2020-07-15');
-
-export const calculateExperience = (): string => {
-  const now = new Date();
-  let years = now.getFullYear() - START_DATE.getFullYear();
-  let months = now.getMonth() - START_DATE.getMonth();
-
-  // Adjust for partial years (if current month is before start month)
-  if (months < 0) {
-    years--;
-    months += 12;
-  }
-
-  // Adjust for partial months (if current day is before start day)
-  if (now.getDate() < START_DATE.getDate()) {
-    months--;
-    if (months < 0) {
-      years--;
-      months += 12;
-    }
-  }
-
-  if (months === 11) {
-    return `nearly ${years + 1} years`;
-  }
-  
-  if (months === 0) {
-    return `${years} years`;
-  }
-
-  return `${years}.${months} years`;
-};
+import { calculateExperience } from './utils/experienceCalculator';
 
 export const TOTAL_EXPERIENCE = calculateExperience();
+
+export const RESUME_PATH = import.meta.env.DEV ? '/CV/Kathiravan_Senior_Frontend_Developer.pdf'  : '/api/resume';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {

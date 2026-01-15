@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2, Sun, Moon } from 'lucide-react';
 import { SectionId } from '../types';
+import { RESUME_PATH } from '../constants';
 
 interface HeaderProps {
   isDark: boolean;
@@ -56,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
           </button>
 
           <a
-            href="/CV/Kathir_Resume.pdf"
+            href={RESUME_PATH}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 text-sm font-semibold bg-primary text-white rounded-full hover:bg-indigo-600 transition-colors shadow-lg shadow-indigo-500/20"
@@ -97,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
             </a>
           ))}
           <a
-            href="/CV/Kathiravan_Resume.pdf"
+            href={RESUME_PATH}
             target="_blank"
             rel="noopener noreferrer"
             className="text-base font-medium text-primary hover:text-indigo-600 dark:hover:text-indigo-400 py-2"
