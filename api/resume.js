@@ -1,21 +1,21 @@
 import fs from 'fs';
 import path from 'path';
-import { calculateExperience } from '../utils/experienceCalculator.js';
+import { calculateExperience, RESUME_NAME } from '../utils/experienceCalculator.js';
 
 export default function handler(req, res) {
     try {
         // Calculate experience dynamically (updates every month automatically)
         const experience = calculateExperience(true);
-
+        
         // Path to your static PDF file
-        const filePath = path.join(process.cwd(), 'public/CV/Kathiravan_Senior_Frontend_Developer.pdf');
+        const filePath = path.join(process.cwd(), `public/CV/${RESUME_NAME}.pdf`);
 
         // Read the PDF file
         const fileBuffer = fs.readFileSync(filePath);
 
         // Set headers to display inline (open in new tab) with dynamic filename
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', `inline; filename="Kathiravan_Senior_Frontend_Developer_${experience}Yrs.pdf"`);
+        res.setHeader('Content-Disposition', `inline; filename="${RESUME_NAME}_${experience}Yrs.pdf"`);
         res.setHeader('Cache-Control', 'no-cache'); // Prevents caching so it updates monthly
 
         // Send the PDF

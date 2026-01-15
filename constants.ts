@@ -1,9 +1,9 @@
 import { ExperienceItem, Project, Skill } from './types';
-import { calculateExperience } from './utils/experienceCalculator';
+import { calculateExperience, RESUME_NAME } from './utils/experienceCalculator';
 
 export const TOTAL_EXPERIENCE = calculateExperience();
 
-export const RESUME_PATH = import.meta.env.DEV ? '/CV/Kathiravan_Senior_Frontend_Developer.pdf'  : '/api/resume';
+export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/api/resume';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
