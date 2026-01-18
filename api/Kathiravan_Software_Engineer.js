@@ -15,7 +15,7 @@ export default function handler(req, res) {
 
         // Set headers to display inline (open in new tab) with dynamic filename
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', `inline; filename="${RESUME_NAME}_${experience}Yrs.pdf"`);
+        res.setHeader('Content-Disposition', `inline; filename="${RESUME_NAME}_${experience}Years.pdf"`);
         res.setHeader('Cache-Control', 'no-cache'); // Prevents caching so it updates monthly
 
         // Send the PDF

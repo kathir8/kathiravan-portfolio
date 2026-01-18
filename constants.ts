@@ -3,7 +3,7 @@ import { calculateExperience, RESUME_NAME } from './utils/experienceCalculator';
 
 export const TOTAL_EXPERIENCE = calculateExperience();
 
-export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/api/resume';
+export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/api/Kathiravan_Software_Engineer';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
