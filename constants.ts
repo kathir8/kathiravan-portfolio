@@ -13,7 +13,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     period: 'JUN 2023 - Present',
     description: [
       'Contributed to the migration of a large-scale LIMS application from Angular 12 to Angular 20.',
-      'Built an Audit Mechanism using Elasticsearch to track user activity and ensure full compliance.',
+      'Provided Angular mentorship to 8 team members and led a team of 12 developers, taking full ownership of two sprint cycles.',
       'Implemented UI and server-side caching to improve performance and reduce load times.',
       'Added compression techniques to decrease API payload size and speed up content delivery.',
     ],
