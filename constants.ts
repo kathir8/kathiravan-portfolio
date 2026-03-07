@@ -3,7 +3,7 @@ import { calculateExperience, RESUME_NAME } from './utils/experienceCalculator';
 
 export const TOTAL_EXPERIENCE = calculateExperience();
 
-export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/api/Kathiravan_Software_Engineer';
+export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/api/Kathiravan_Senior_Software_Engineer';
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
@@ -16,6 +16,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Provided Angular mentorship to 8 team members and led a team of 12 developers, taking full ownership of two sprint cycles.',
       'Implemented UI and server-side caching to improve performance and reduce load times.',
       'Added compression techniques to decrease API payload size and speed up content delivery.',
+      'Created an Elasticsearch-based Audit Mechanism for comprehensive user activity and data audit tracking across the application, ensuring compliance.'
     ],
   },
   {
