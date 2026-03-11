@@ -30,19 +30,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Built rich UI experiences using Monaco Editor, ECharts, AG-Grid, and Google Maps integrations.',
       'Collaborated with clients on requirements, demos, and enhancements, delivering consistent product improvements.',
     ],
-  },
-  {
-    id: '3',
-    company: 'Finix Info Solution',
-    role: 'Frontend Developer',
-    period: 'JUL 2020 - AUG 2021',
-    description: [
-      'Designed and developed complete responsive UIs using jQuery, Bootstrap, and HTML5 for multiple client projects.',
-      'Owned full lifecycle delivery for web projects, including UI design, development, and client communication.',
-      'Built B2B platform modules with workflows for buyers, sellers, logistics, banks, and insurance users.',
-      'Performed unit testing and improved code reliability across delivered features.',
-    ],
-  },
+  }
 ];
 
 export const PROJECTS: Project[] = [
