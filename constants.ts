@@ -17,7 +17,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Implemented UI and server-side caching to improve performance and reduce load times.',
       'Added compression techniques to decrease API payload size and speed up content delivery.',
       'Created an Elasticsearch-based Audit Mechanism for comprehensive user activity and data audit tracking across the application, ensuring compliance.'
-    ],
+    ]
   },
   {
     id: '2',
@@ -29,8 +29,20 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Implemented state management with NgRx and robust API handling with RxJS for reliability and maintainability.',
       'Built rich UI experiences using Monaco Editor, ECharts, AG-Grid, and Google Maps integrations.',
       'Collaborated with clients on requirements, demos, and enhancements, delivering consistent product improvements.',
-    ],
-  }
+    ]
+  },
+  {
+    id: '3',
+    company: 'Mirror Technologies',
+    role: 'Frontend Developer',
+    period: 'JUL 2020 - AUG 2021',
+    description: [
+      'Designed and developed complete responsive UIs using jQuery, Bootstrap, and HTML5 for multiple client projects.',
+      'Owned full lifecycle delivery for web projects, including UI design, development, and client communication.',
+      'Built B2B platform modules with workflows for buyers, sellers, logistics, banks, and insurance users.',
+      'Performed unit testing and improved code reliability across delivered features.',
+    ]
+  },
 ];
 
 export const PROJECTS: Project[] = [
