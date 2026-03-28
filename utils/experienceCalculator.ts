@@ -1,5 +1,5 @@
 export const RESUME_NAME = 'Kathiravan_Senior_Software_Engineer';
-export const START_DATE = new Date('2020-07-15'); // IT Experience Start date: July 15, 2020
+export const START_DATE = new Date('2021-08-18'); // IT Experience Start date: July 15, 2020
 
 export const calculateExperience = (numericOnly?: boolean): string => {
   const now = new Date();
