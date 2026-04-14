@@ -79,5 +79,5 @@ export const SKILLS: Skill[] = [
   { name: 'Ionic / Flutter', category: 'Frontend', proficiency: 60 },
   { name: 'SQL', category: 'Backend', proficiency: 60 },
   { name: 'Elasticsearch', category: 'Backend', proficiency: 55 },
-  { name: 'Node.js', category: 'Backend', proficiency: 50 },
+  { name: 'Node.js / MongoDB', category: 'Backend', proficiency: 50 },
 ];
