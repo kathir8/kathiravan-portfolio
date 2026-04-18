@@ -10,7 +10,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     id: '1',
     company: 'Dedalus',
     role: 'Software Engineering Senior Associate',
-    period: 'JUN 2023 - Present',
+    period: 'JUN 2023 - APR 2026',
     description: [
       'Contributed to the migration of a large-scale LIMS application from Angular 12 to Angular 20.',
       'Provided Angular mentorship to 8 team members and led a team of 12 developers, taking full ownership of two sprint cycles.',
@@ -33,7 +33,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     id: '3',
-    company: 'Mirror Technologies',
+    company: 'Finix info solution',
     role: 'Frontend Developer',
     period: 'JUL 2020 - AUG 2021',
     description: [
