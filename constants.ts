@@ -21,7 +21,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     id: '2',
-    company: 'Boodskap Labs',
+    company: 'Boodskap labs',
     role: 'Software Engineer',
     period: 'AUG 2021 - MAY 2023',
     description: [
@@ -33,7 +33,7 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     id: '3',
-    company: 'Finix info solution',
+    company: 'Mirror technologies',
     role: 'Frontend Developer',
     period: 'JUL 2020 - AUG 2021',
     description: [
