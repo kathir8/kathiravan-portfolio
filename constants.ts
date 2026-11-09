@@ -8,6 +8,18 @@ export const RESUME_PATH = import.meta.env.DEV ? `/CV/${RESUME_NAME}.pdf`  : '/a
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: '1',
+    company: 'Paix Services',
+    role: 'Senior Software Engineer',
+    period: 'APR 2026 - PRESENT',
+    description: [
+      'Developed and maintained scalable healthcare applications using Angular, TypeScript, and a shared component library',
+      'Worked on microservices-based backend architecture using C# .NET Core, REST APIs, and Entity Framework Core (EF Core) for efficient data access and seamless frontend-backend integration.',
+      'Developed and enhanced Patient Dashboard and Visit History modules, providing healthcare professionals with centralized access to patient information, clinical records, and historical visits.',
+      'Implemented and optimized Lab Order Management workflows, including order creation, validation, status tracking, and integration with backend services to streamline clinical operations.',
+    ]
+  },
+  {
+    id: '2',
     company: 'Dedalus',
     role: 'Software Engineering Senior Associate',
     period: 'JUN 2023 - APR 2026',
@@ -20,7 +32,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     ]
   },
   {
-    id: '2',
+    id: '3',
     company: 'Boodskap labs',
     role: 'Software Engineer',
     period: 'AUG 2021 - MAY 2023',
@@ -32,7 +44,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     ]
   },
   {
-    id: '3',
+    id: '4',
     company: 'Mirror technologies',
     role: 'Frontend Developer',
     period: 'JUL 2020 - AUG 2021',
